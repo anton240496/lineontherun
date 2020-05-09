@@ -5,7 +5,7 @@ public class PetRock {
     public PetRock(String InputString) {
         this.InputString = InputString;
         this.result=result;
-      result = new StringBuilder();
+      result= new StringBuilder();
         int stringLength = InputString.length();
 
         for (int i = 0; i < stringLength; i++) {
