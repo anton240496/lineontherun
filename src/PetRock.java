@@ -1,15 +1,16 @@
 public class PetRock {
     private String InputString;
-    private String result;
+    private StringBuilder result;
 
     public PetRock(String InputString) {
         this.InputString = InputString;
         this.result=result;
-      result = "";
+      result = new StringBuilder();
         int stringLength = InputString.length();
 
         for (int i = 0; i < stringLength; i++) {
-            result = InputString.charAt(i) + result;
+            result.insert(0,InputString.charAt(i));
+         //   result = InputString.charAt(i) + result;
 
         }
     }
@@ -18,7 +19,7 @@ public class PetRock {
 
             return InputString;
         }
-    public String getResult() {
+    public StringBuilder getResult() {
 
         return result;
     }
